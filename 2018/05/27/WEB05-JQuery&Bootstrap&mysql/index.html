@@ -6,15 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://xxsliberty.github.io.git">
-  <title>Archives: 2018 | liberty</title>
+  <title>JQuery&amp;Bootstrap&amp;mysql | liberty</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="liberty">
-<meta property="og:url" content="http://xxsliberty.github.io.git/archives/2018/index.html">
+  <meta name="description" content="JQuery总结一. JQ的语法**JQuery是对js的封装 Jq–&amp;gt;js: Jq对象.get(0)  或 jq对象[0] Js–&amp;gt;jq $(js对象);">
+<meta name="keywords" content="JAVA">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JQuery&amp;Bootstrap&amp;mysql">
+<meta property="og:url" content="http://xxsliberty.github.io.git/2018/05/27/WEB05-JQuery&Bootstrap&mysql/index.html">
 <meta property="og:site_name" content="liberty">
+<meta property="og:description" content="JQuery总结一. JQ的语法**JQuery是对js的封装 Jq–&amp;gt;js: Jq对象.get(0)  或 jq对象[0] Js–&amp;gt;jq $(js对象);">
 <meta property="og:locale" content="default">
+<meta property="og:image" content="file:///C:/Users/ADMINI~1/AppData/Local/Temp/ksohtml/wpsCEFE.tmp.jpg">
+<meta property="og:updated_time" content="2018-05-27T14:21:11.613Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="liberty">
+<meta name="twitter:title" content="JQuery&amp;Bootstrap&amp;mysql">
+<meta name="twitter:description" content="JQuery总结一. JQ的语法**JQuery是对js的封装 Jq–&amp;gt;js: Jq对象.get(0)  或 jq对象[0] Js–&amp;gt;jq $(js对象);">
+<meta name="twitter:image" content="file:///C:/Users/ADMINI~1/AppData/Local/Temp/ksohtml/wpsCEFE.tmp.jpg">
   
     <link rel="alternative" href="/atom.xml" title="liberty" type="application/atom+xml">
   
@@ -154,36 +161,402 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-WEB05-JQuery&amp;Bootstrap&amp;mysql" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/05/27/WEB05-JQuery&Bootstrap&mysql/" class="archive-article-date">
-  	<time datetime="2018-05-26T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-27</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/05/27/WEB05-JQuery&Bootstrap&mysql/">JQuery&amp;Bootstrap&amp;mysql</a>
+    <h1 class="article-title" itemprop="name">
+      JQuery&amp;Bootstrap&amp;mysql
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2018/05/27/WEB05-JQuery&Bootstrap&mysql/" class="archive-article-date">
+  	<time datetime="2018-05-26T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-27</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="JQuery总结"><a href="#JQuery总结" class="headerlink" title="JQuery总结"></a>JQuery总结</h1><h3 id="一-JQ的语法"><a href="#一-JQ的语法" class="headerlink" title="一. JQ的语法**"></a>一. <strong>JQ的语法<em>**</em></strong></h3><p>JQuery是对js的封装</p>
+<p>Jq–&gt;js:</p>
+<p>Jq对象.get(0)  或 jq对象[0]</p>
+<p>Js–&gt;jq</p>
+<p>$(js对象);</p>
+<a id="more"></a>
+<p><a href="">1.DOM树加载完成后加载:$(function(){</a></p>
+<p>});</p>
+<p>$(function(){})与window.onload = function(){}的区别</p>
+<p>前者:Dom树绘制完成执行</p>
+<p>后者:页面加载完成后执行</p>
+<p><a href="">2.$等同于JQuery对象</a></p>
+<h3 id="二-JQ的选择器"><a href="#二-JQ的选择器" class="headerlink" title="二. JQ的选择器**"></a>二. <strong>JQ的选择器<em>**</em></strong></h3><p>基本选择器:</p>
+<p>id选择器</p>
+<p>class选择器</p>
+<p>标签选择器</p>
+<p>通配符选择器”*” </p>
+<p>并列选择器”,”</p>
+<p>层级选择器:</p>
+<p>空格(后代选择器): 选择给定元素下的所有给定目标元素</p>
+<p>+:查询紧挨着的下一个目标元素</p>
+<p>~(同辈选择器):选择给定元素的所有同层级目标元素</p>
+<p>>:选择给定元素下的所有间接子元素</p>
+<p>属性选择器</p>
+<p>$(“div[name]”):查找所有有name属性的标签</p>
+<p>$(“div[name=’x’]”):查找所有name属性值为x的标签</p>
+<p>表单选择器:</p>
+<p>:input</p>
+<p>:checkbox</p>
+<p>:text</p>
+<p>:password</p>
+<p>:file</p>
+<p>:…</p>
+<p>表单属性选择器:</p>
+<p>:checked</p>
+<p>:selected</p>
+<h3 id="三-JQ事件"><a href="#三-JQ事件" class="headerlink" title="三. JQ事件**"></a>三. <strong>JQ事件<em>**</em></strong></h3><p>鼠标单击事件:jquery标签对象.click(function(){});</p>
+<p>下拉列表改变事件:change()</p>
+<h3 id="四-文档操作"><a href="#四-文档操作" class="headerlink" title="四. 文档操作**"></a>四. <strong>文档操作<em>**</em></strong></h3><ol>
+<li><a href="">内部插入</a></li>
+</ol>
+<p>append()</p>
+<ol start="2">
+<li><a href="">外部插入</a></li>
+</ol>
+<p>insertBefore()</p>
+<p>insertAfter()</p>
+<p>after()</p>
+<p>before()</p>
+<ol start="3">
+<li><a href="">删除</a></li>
+</ol>
+<p>remove():谁调用删除谁</p>
+<p>Empty();清空标签</p>
+<ol start="4">
+<li><a href="">替换</a></li>
+</ol>
+<p>Replace()</p>
+<h3 id="五-属性操作"><a href="#五-属性操作" class="headerlink" title="五. 属性操作**"></a>五. <strong>属性操作<em>**</em></strong></h3><p><a href="">1.获取以及设置属性值</a></p>
+<p>attr(“属性名”):获取属性值</p>
+<p>attr(“属性名”,”属性值”):设置属性值</p>
+<p>Prop(“属性名”):查询属性值</p>
+<p>Prop(“属性名”,”属性值”):设置属性值</p>
+<ol start="2">
+<li><a href="">Class属性</a></li>
+</ol>
+<p>addClass();添加class属性</p>
+<p>removeClass();删除class属性</p>
+<ol start="3">
+<li><a href="">获取和设置(有值为插入,无值为获取)</a></li>
+</ol>
+<p>html();即可文本又可元素(即标签)</p>
+<p>text();用于文本</p>
+<p>val();用于表单</p>
+<h3 id="六-动画效果"><a href="#六-动画效果" class="headerlink" title="六. 动画效果**"></a>六. <strong>动画效果<em>**</em></strong></h3><p>显示和隐藏:</p>
+<p>show();</p>
+<p>三种使用方式:1.毫秒值</p>
+<ol start="2">
+<li><p><a href="">”</a>slow”:慢 “normal”:正常 “fast”:快</p>
+</li>
+<li><p><a href="">无值</a></p>
+</li>
+</ol>
+<p>Hidde();</p>
+<p>滑动</p>
+<p>slidDown():向下滑动</p>
+<p>slidUp():向上滑动</p>
+<p>淡入和淡出</p>
+<p>fadeIn():淡入</p>
+<p>fadeOut():淡出</p>
+<p>自定义</p>
+<p>Animate()</p>
+<h3 id="案例一-下拉框左右选择"><a href="#案例一-下拉框左右选择" class="headerlink" title="案例一:下拉框左右选择**"></a><strong>案例一:下拉框左右选择<em>**</em></strong></h3><p>考察知识点:</p>
+<p>append();在指定元素里面追加元素(指定元素必须要有子元素)</p>
+<p>appendTo();把指定元素添加到某个元素里面</p>
+<p>Prop();有一个参数时为查询某个元素的属性值</p>
+<p>有两个参数是为为某个属性设置值</p>
+<p>单击事件:click(funtion(){——})</p>
+<p>双击时间:dbclick(function(){——})</p>
+<p>思路:1.获取指定下拉框对象</p>
+<ol start="2">
+<li><p><a href="">判断哪个option被选中(checked属性是否为true)</a></p>
+</li>
+<li><p><a href="">使用appendTo()方法把选中的元素添加到指定标签中</a></p>
+</li>
+</ol>
+<h3 id="案例二-表单校验"><a href="#案例二-表单校验" class="headerlink" title="案例二:表单校验**"></a><strong>案例二:表单校验<em>**</em></strong></h3><p>考查知识点:</p>
+<p>find(“JQ对象”):查找元素下指定元素(返回值为对象)</p>
+<p>$(this).is(“JQ对象”);判断一个$(this)是否为某一标签对象</p>
+<p>append();在某一标签(有子元素)内追加某一元素</p>
+<p>trigger();执行浏览器默认的指定事件</p>
+<p>triggerHandller();执行自己写的事件</p>
+<p>思路:</p>
+<ol>
+<li><p>为每一个必填项追加一个<b color="’color’">*元素 append()</b></p>
+</li>
+<li><p>为所有input绑定失去焦点事件$(“form :input”).blur(function(){—-});</p>
+</li>
+<li><p>每次进入事件,清除之前的追加元素 $(this).parend().find(“.formtips”).remove() </p>
+</li>
+</ol>
+<p>输入项-&gt;父类元素(td)-&gt;<span class="’formtips’-">删除之</span></p>
+<ol start="4">
+<li><p>判断元素是否是某一表单项 $(this).is(表单项对象”)</p>
+</li>
+<li><p>校验之,并为其后追加相应的提示(元素)</p>
+<ol start="6">
+<li>为表单添加提交事件,执行自己写的失去焦点事件,利用class选择器选择有错误的标签,.length判断长度,如果长度大于    0,返回false</li>
+</ol>
+</li>
+</ol>
+<h1 id="BootStrap总结"><a href="#BootStrap总结" class="headerlink" title="BootStrap总结**"></a><strong>BootStrap总结<em>**</em></strong></h1><h3 id="一-概念"><a href="#一-概念" class="headerlink" title="一:概念**"></a><strong>一:概念<em>**</em></strong></h3><p>什么是bootstrap?</p>
+<p>bootstrap是对html.css.script(jq)的封装(框架)</p>
+<p>Bootstrap的应用场景?</p>
+<p>响应式页面,可以在不同设备上使用的页面</p>
+<h3 id="二-Bootstrap的准备工作"><a href="#二-Bootstrap的准备工作" class="headerlink" title="二:Bootstrap的准备工作**"></a><strong>二:Bootstrap的准备工作<em>**</em></strong></h3><ol>
+<li><p>下载bootstrap</p>
+<ol start="2">
+<li>引入bootstrap的两个css文件,和两个js文件(其中一个是jq的js文件,要在bootstrap    的js文件之前引入,原因:bootstrap的js中用到了jq里面的东西)</li>
+</ol>
+</li>
+<li><p>设置一个mate头</p>
+</li>
+</ol>
+<h3 id="三-栅格系统"><a href="#三-栅格系统" class="headerlink" title="三:栅格系统**"></a><strong>三:栅格系统<em>**</em></strong></h3><p>需要一个容器: class=”containner”</p>
+<p>containner:不占满屏幕</p>
+<p>Containner-f…占满屏幕</p>
+<p>需要定义一个行:class=”row”</p>
+<p>每一行最多12列</p>
+<p>col-lg-n  col-md-n  col-sm-n  col-xs-n    (n代表类数)</p>
+<h3 id="四-案例-商城的首页"><a href="#四-案例-商城的首页" class="headerlink" title="四:案例 商城的首页**"></a><strong>四:案例 商城的首页<em>**</em></strong></h3><p>需要的bootstrap插件(参见bootstrap3.0文档):</p>
+<p>导航栏</p>
+<p>Ø 图片轮播</p>
+<p>步骤:</p>
+<p>1.引入两个css文件和两个人js文件(jq.js要在bootstrap.js之前引入),设置一个mate头</p>
+<p>2.创建容器<div class="”containner”"></div></p>
+<p>3.创建行<div class="”row”"></div></p>
+<p>4.为每一行填充内容</p>
+<h1 id="mySql数据库"><a href="#mySql数据库" class="headerlink" title="mySql数据库**"></a><strong>mySql数据库<em>**</em></strong></h1><h4 id="1-1-数据库-概述"><a href="#1-1-数据库-概述" class="headerlink" title="1.1 数据库**概述**"></a>1.1 <strong>数据库**</strong>概述<strong>**</strong></h4><h4 id="O-什么-是RDBMS"><a href="#O-什么-是RDBMS" class="headerlink" title="Ø 什么**是RDBMS**"></a>Ø <strong>什么**</strong>是<strong><strong>RDBMS**</strong></strong></h4><p>关系型数据库管理系统(relational database manager system):使用sql语句来操作管理数据库的系统</p>
+<h5 id="O-数据库分类"><a href="#O-数据库分类" class="headerlink" title="Ø 数据库分类**"></a>Ø <strong>数据库分类<em>**</em></strong></h5><p>l 关系型数据库</p>
+<p>用来描述实体与实体之间的关系</p>
+<p>常见的数据库:oracle mysql db2 sqlserver</p>
+<p>l 非关系型数据库</p>
+<p>特点:查询速度快</p>
+<p>但是描述不了实体与实体之间的的关系</p>
+<h5 id="O-数据库-存储和管理数据"><a href="#O-数据库-存储和管理数据" class="headerlink" title="Ø 数据库**存储和管理数据**"></a>Ø <strong>数据库**</strong>存储和管理数据<strong>**</strong></h5><p>数据库服务器存储和管理数据方式：</p>
+<p>1.在电脑上安装SQL服务(安装了sql服务的电脑就是本地服务器 localhost)</p>
+<p>2.在sql服务上创建数据库database</p>
+<p>3.在数据库上创建表table</p>
+<p>4.在表中增删改查数据</p>
+<p>小问题：数据库服务关了，不能连接</p>
+<p>2003:Error Con’t connect mysql server on localhost</p>
+<p>原因:sql服务关闭了,无法连接到本地的sql服务</p>
+<p>解决:在电脑-&gt;管理-&gt;属性-&gt;服务-&gt;sqlserver-&gt;开启服务</p>
+<p>解决方式二:在命令行中输入:net start mysql;</p>
+<p>关闭mysql服务:net stop mysql;</p>
+<h4 id="1-2-数据-库里面具体内容（数据库，数据表）"><a href="#1-2-数据-库里面具体内容（数据库，数据表）" class="headerlink" title="1.2 数据**库里面具体内容（数据库，数据表）**"></a>1.2 <strong>数据**</strong>库里面具体内容（<strong><strong>数据库</strong></strong>，数据表）<strong>**</strong></h4><p>创建数据库,在数据库上创建表</p>
+<p>表中的内容:属性字段 数据记录 </p>
+<h4 id="1-3-操作-数据库的语言：sql，作用操作数据库和数据表的。"><a href="#1-3-操作-数据库的语言：sql，作用操作数据库和数据表的。" class="headerlink" title="1.3 操作**数据库的语言：sql，作用操作数据库和数据表的。**"></a>1.3 <strong>操作**</strong>数据库的语言：sql<strong><strong>，</strong></strong>作用操作数据库和数据表的。<strong>**</strong></h4><p>Ø  什么是sql语言?</p>
+<p>SQL(Structured Query Language)语言是一门结构化查询语言，作用是操作数据库和数据表的</p>
+<p>Ø  sql的分类?</p>
+<p>DML:数据操作语言 增删改表数据</p>
+<p>DDL:数据定义语言  操作数据库和表格的结构</p>
+<p>DCL:数据控制语言      操作数据库权限</p>
+<p>DQL:数据查询语言  查询数据的语言</p>
+<p>DQL其实是属于DML</p>
+<h4 id="1-4-DDL-操作数据库-和数据表结构"><a href="#1-4-DDL-操作数据库-和数据表结构" class="headerlink" title="1.4 DDL:**操作数据库 和数据表结构**"></a>1.4 <strong>DDL:**</strong>操作数据库<strong><strong> 和</strong></strong>数据表结构<strong>**</strong></h4><h5 id="1-4-1-语法格式"><a href="#1-4-1-语法格式" class="headerlink" title="1**.4.1 语法格式**"></a><strong>1**</strong>.4.1 语法<strong><strong>格式**</strong></strong></h5><p>不区分大小写,以分号结束</p>
+<h5 id="1-4-2-操作数据库"><a href="#1-4-2-操作数据库" class="headerlink" title="1**.4.2 操作数据库**"></a><strong>1**</strong>.4.2<strong><strong> 操作</strong></strong>数据库<strong>**</strong></h5><p>Ø 增</p>
+<p>Create database 数据库名称 character set 字符集;</p>
+<p>Ø 删</p>
+<p>Drop database 数据库名称;</p>
+<p>Ø 改</p>
+<p>Alert database 数据库名称 character set 字符集  collate校验规则;</p>
+<p>Ø 查</p>
+<p>查询所有数据库: show databases;</p>
+<p>查询当前数据库:select database();</p>
+<p>切换数据库:use 数据库名;</p>
+<h5 id="1-4-3-操作数据表结构"><a href="#1-4-3-操作数据表结构" class="headerlink" title="1**.4.3 操作数据表结构**"></a><strong>1**</strong>.4.3<strong><strong> </strong></strong>操作<strong><strong>数据表结构**</strong></strong></h5><p>Ø 创建表格</p>
+<p>Create  table 表格名(</p>
+<p>字段名1 字段类型 约束,</p>
+<p>字段名2 字段类型 约束</p>
+<p>);</p>
+<p>字段比较:</p>
+<p>Java中                    mysql中</p>
+<p>byte/short/int/long     tinyint/smallint/int/bigint</p>
+<p>float                    float</p>
+<p>double                double</p>
+<p>char/string            char/varchar</p>
+<p>boolean                bit</p>
+<p>date                    date/time/datatime/timestamp</p>
+<p>二进制数据            text/blob</p>
+<p>Ø 删除表格</p>
+<p>drop table 表名;</p>
+<p>Ø 查询表格</p>
+<p>查询所有表</p>
+<p>Show tables;</p>
+<p>查询表结构</p>
+<p>desc 表名;</p>
+<p>Ø 修改表格</p>
+<p>n 增加列</p>
+<p>Alter table 表名 add 字段名 数据类型 约束</p>
+<p>n 删除表格字段</p>
+<p>Alert table 表名 drop 字段名</p>
+<p>n 改字段名称</p>
+<p>Alter table 表名 change字段名</p>
+<p>n 改字段类型</p>
+<p>Alter table 表名 modify 字段名 字段类型 约束</p>
+<p>n 改表名</p>
+<p>Alter table 表名 rename to 新表明</p>
+<p>1.5 <strong> DML 操作表记录<em>**</em></strong></p>
+<p>1.5.1 <strong>添加表记录<em>**</em></strong></p>
+<p>添加某几列数据:insert into表名(字段名) values(字段值);</p>
+<p>添加所有列数据:insert into 表名 values(字段值)</p>
+<p>添加中文字段乱码问题:</p>
+<p>原因:sql服务在安装的时候指定的utf8,而电脑端的命令行窗口是gbk,字符集不一致</p>
+<p>解决:在MySQL的目录下,修改ini.文件,把客户端的编码改成gbk</p>
+<p>注意问题:日期类型和字符串类型要使用单引号</p>
+<p>1.5.2 <strong>修改表记录<em>**</em></strong></p>
+<p>update 表名 set 字段1=字段值,字段2=字段值 where 条件</p>
+<p>1.5.3 <strong>删除表记录<em>**</em></strong></p>
+<p>delete from 表名 where 条件 </p>
+<p>delete和truncate的区别</p>
+<p>delete 是DML中的语句(不会删除表),自增长主键会继之前的累加</p>
+<p>truncate是DDL中的语句(会删除表,然后重新创建这个表),自增长主键会从1重新开始</p>
+<p>1.6 <strong> DQL查询表记录<em>**</em></strong></p>
+<p><strong>基本查询<em>**</em></strong></p>
+<p>查询所有列<em>**</em></p>
+<p>Select * from 表名</p>
+<p>查询其中几个列</p>
+<p>Select 字段名1,字段名2 from 表名</p>
+<p><strong>条件查询<em>**</em></strong></p>
+<p>Select *` from 表名 where 条件</p>
+<p><strong>排序查询(默认为升序)<em>**</em></strong></p>
+<p>Select * from 表名 where 条件 order by 字段名 asc(升序)或desc(降序)</p>
+<p><strong>聚合函数**</strong>(集合函数是对列的运算)<strong>**</strong></p>
+<p>MAX();求最大值</p>
+<p>MIN();求最小值</p>
+<p>SUM();求和</p>
+<p>COUNT();根据某一列求和</p>
+<p>AVG();求平均数</p>
+<p>注意:</p>
+<table>
+<thead>
+<tr>
+<th>id</th>
+<th>username</th>
+<th>math</th>
+<th>english</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>zhangSan</td>
+<td>10</td>
+<td>10</td>
+</tr>
+<tr>
+<td>2</td>
+<td>liSi</td>
+<td>(NULL)</td>
+<td>10</td>
+</tr>
+</tbody>
+</table>
+<p>sum(math)+sum(english)和Sum(math+english)的区别?</p>
+<p>问题:如果有null值得时候前后两者的值会不同</p>
+<p>原因:任何值如null值相加得到的永远是null,但是sum()聚合函数单列运算的时        候会把null值变成0,而后者先行运算再进行列运算,所以求出来的和相对于        前者会小(小的是空值那一行的其他值相加的和)</p>
+<p>解决:后者写成sum(ifnull(math,0)+english)</p>
+<h3 id="1-7-多表操作"><a href="#1-7-多表操作" class="headerlink" title="1.7 多表操作**"></a>1.7 <strong>多表操作<em>**</em></strong></h3><p><strong>主键的特点:<em>**</em></strong></p>
+<ol>
+<li><p><strong>唯一<em>**</em></strong></p>
+</li>
+<li><p><strong>非空<em>**</em></strong></p>
+</li>
+<li><p><strong>可以被引用 <em>**</em></strong></p>
+</li>
+</ol>
+<p><strong>外键的特点:<em>**</em></strong></p>
+<ol>
+<li><p><strong>值在对应的表的主键中必须存在<em>**</em></strong></p>
+</li>
+<li><p><strong>可以为null<em>**</em></strong></p>
+</li>
+</ol>
+<p><strong>创建表示添加主键:<em>**</em></strong></p>
+<p><strong>constraint fk_xx foreign key(外键字段名) references 主表名(主键)<em>**</em></strong></p>
+<p><strong>表创建完成后添加主键<em>**</em></strong></p>
+<p><strong>Alter table 表名 add constraint fk_xx foreign key (外键字段名) references <em>**</em></strong></p>
+<p><strong>主表名(主表主键)<em>**</em></strong></p>
+<hr>
+<p>Ø <strong>多表之间的关系<em>**</em></strong></p>
+<p>n <strong>一对一关系<em>**</em></strong></p>
+<p>u 从表的主键即为即为外键(唯一,非空)<strong>    <em>**</em></strong></p>
+<p>n <strong>一对多关系<em>**</em></strong></p>
+<p>u 外键通常在多的一方存在(外键一般设置为非空,不然没意义)</p>
+<p>n <strong>多对多关系<em>**</em></strong></p>
+<p>u 创建中间表,中间表的中至少有两个字段,两个外键字段分别对应多对多表的主键</p>
+<p>Ø <strong>多表查询<em>**</em></strong></p>
+<hr>
+<p>1.7.1 <strong>交叉连接**</strong>cross<strong>**</strong></p>
+<p>取两张表的乘积(不去笛卡尔积)</p>
+<p>Select * from 表一 scross 表二</p>
+<p>Select * from 表一,表二</p>
+<p>1.7.2 <strong>内连接 **</strong>inner join(inner可以省略)<strong>**</strong></p>
+<p>取两张表的公共部分(去除笛卡尔积)</p>
+<p>显示内连接</p>
+<p>Select * from 表一 inner join 表二 on 连接的条件</p>
+<p>隐式内连接</p>
+<p>Select * from 表一,表二 where 连接条件</p>
+<p>1.7.3 <strong>外连接**</strong>outer join(outer 可以省略)<strong>**</strong></p>
+<p>左外链接 left outer join</p>
+<p>Select * from 表一 left outer join 表二 on 连接条件</p>
+<p>右外连接 right outer join</p>
+<p>Select * from 表一 right outer join 表二 on 连接条件</p>
+<p>附上神图</p>
+<p>`<img src="file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml\wpsCEFE.tmp.jpg" alt="img"></p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/img/zfb.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/img/weixin.jpg">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -195,73 +568,106 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://xxsliberty.github.io.git/2018/05/27/WEB05-JQuery&Bootstrap&mysql/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/05/25/你好/" class="archive-article-date">
-  	<time datetime="2018-05-25T15:10:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-25</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2018/05/25/你好/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">你好</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/05/25/你好/">你好</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/05/25/hello-world/" class="archive-article-date">
-  	<time datetime="2018-05-25T14:51:33.476Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-25</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/05/25/hello-world/">Hello World</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
 
 
           </div>
@@ -284,8 +690,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
